@@ -154,13 +154,6 @@ android_app_import {
 	product_specific: true,
 }
 
-dex_import {
-	name: "audiosphere",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
-	system_ext_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti-hta",
 	owner: "xiaomi",
@@ -195,14 +188,5 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "audiosphere",
-	owner: "xiaomi",
-	src: "proprietary/system_ext/etc/permissions/audiosphere.xml",
-	filename_from_src: true,
-	sub_dir: "permissions",
-	system_ext_specific: true,
 }
 
